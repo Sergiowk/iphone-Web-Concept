@@ -6,7 +6,16 @@
     font-family: "Poppins", sans-serif;
 }
 
-nav{
+.alert{
+    background-color: red;
+    text-align: center;
+    top: 0;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    
+}
+section nav{
     position: absolute;
     display: flex;
     padding: 3rem 10rem;
