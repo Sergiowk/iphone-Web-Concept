@@ -29,6 +29,18 @@ nav{
     
 }
 
+.iphone13pro{
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    object-fit: cover;
+    top: 30%;
+    left: 50%;
+    /*With "left" the text starts on 50%, but the text is not centered, with transform we fix that*/
+    transform: translate(-50%, -30%);
+    
+}
+
 .background {
     width: 100%;
     height: 100vh;
@@ -54,6 +66,7 @@ nav{
     min-height: 100vh;
     /*z-index: 2 because we are going pass over the container and nav when scrolling*/
     z-index: 2;
+    position: absolute;
 }
 
 .content-images{
