@@ -69,7 +69,25 @@ section nav{
     font-size: 6rem;
 }
 
+.second-title{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    /*With "left" the text starts on 50%, but the text is not centered, with transform we fix that*/
+    transform: translate(-50%, -30%);
+    font-size: 6rem;
+}
+
 .content{
+    width: 100%;
+    background-color: rgb(35, 36, 38);
+    min-height: 100vh;
+    /*z-index: 2 because we are going pass over the container and nav when scrolling*/
+    z-index: 2;
+    position: absolute;
+}
+
+.content2{
     width: 100%;
     background-color: rgb(35, 36, 38);
     min-height: 100vh;

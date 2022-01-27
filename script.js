@@ -5,12 +5,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     //Animations
     timeline
-    .fromTo('.iphone13', 3,{y:0}, {y:-300})
+    .fromTo('.iphone13', 3,{y:600}, {y:-300})
     .to('.iphone13', 3, {opacity:0} )
+    .to('.main-title', {opacity:0, duration: 3}, '-=3')
+    .fromTo('.second-title', { opacity:0}, {opacity:1, duration: 3})
     .to('.iphone13pro', 1, {opacity:1})
     .fromTo('.iphone13pro', 3,{y:0}, {y:-300}, '-=1')
     .to('.content', 3, {top:'0%'})
-    .fromTo('.content-images', { opacity:0}, { opacity:1, duration: 3});
+    .fromTo('.content-images', { opacity:0}, { opacity:1, duration: 3})
+    .to('.content2', 3, {top:'70%'})
+    .fromTo('.text', { opacity:0}, { opacity:1, duration: 3});
 
     //When we trigger the animations
     let scene = new ScrollMagic.Scene({
