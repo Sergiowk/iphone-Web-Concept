@@ -1,6 +1,7 @@
-let controller = new ScrollMagic.Controller();
-//timeline for running different animations at the same time
-let timeline = new TimelineMax();
+document.addEventListener("DOMContentLoaded", function(event) { 
+    let controller = new ScrollMagic.Controller();
+    //timeline for running different animations at the same time
+    let timeline = new TimelineMax();
 
 //Animations
 timeline
@@ -21,3 +22,4 @@ let scene = new ScrollMagic.Scene({
 .setTween(timeline)
 .setPin("section")
 .addTo(controller);
+
